@@ -15,7 +15,7 @@ if not groq_api_key:
 llm = ChatGroq(groq_api_key=groq_api_key, model_name="Llama3-8b-8192")
 
 
-st.title("🤖 Myself Anirban")
+st.title("Generative AI chatbot")
 st.markdown("Ask me anything you want")
 
 if "chat_history" not in st.session_state:
