@@ -12,7 +12,7 @@ if not groq_api_key:
     st.stop()
 
 
-llm = ChatGroq(groq_api_key=groq_api_key, model_name="Llama3-8b-8192")
+llm = ChatGroq(groq_api_key=groq_api_key, model_name="llama-3.1-8b-instant")
 
 
 st.title("Generative AI chatbot")
@@ -33,3 +33,4 @@ if user_input:
 
 for sender, msg in st.session_state.chat_history:
     st.markdown(f"**{sender}:** {msg}")
+
