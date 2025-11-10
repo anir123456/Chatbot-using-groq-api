@@ -8,7 +8,7 @@ load_dotenv()
 groq_api_key = os.getenv('GROQ_API_KEY')
 
 if not groq_api_key:
-    st.error("❌ GROQ_API_KEY is missing. Set it in .env file.")
+    st.error("GROQ_API_KEY is missing. Set it in .env file.")
     st.stop()
 
 
@@ -33,4 +33,5 @@ if user_input:
 
 for sender, msg in st.session_state.chat_history:
     st.markdown(f"**{sender}:** {msg}")
+
 
